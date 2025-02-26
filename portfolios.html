@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachana Prabhu - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease-in-out;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #4682B4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            border-radius: 50%;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4682B4;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e0f7fa;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rachana</h1>
+        <p>Artificial Intelligence and Data Science Engineer</p>
+    </header>
+    <img src="C:\Users\Rachana Prabhu\Downloads\DLith\pic5.jpeg" alt="pic5" class="profile-pic">
+    
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p id="about-me"></p>
+        </section>
+        
+        <section>
+            <h2>Education</h2>
+            <ul id="education-list"></ul>
+        </section>
+        
+        <section>
+            <h2>Skills</h2>
+            <ul id="skills-list"></ul>
+        </section>
+        
+        <section>
+            <h2>Projects</h2>
+            <ul id="projects-list"></ul>
+        </section>
+        
+        <section>
+            <h2>Contact</h2>
+            <p id="contact-info"></p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Rachana Prabhu. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript variables and data types
+        let aboutMe = "With knowledge and skills in Artificial Intelligence and Data Science, I strive for growth and excellence in my career.";
+        let education = [
+            "B.E in AI & Data Science - SMVITM, CGPA: 7.6",
+            "Pre-University - Dr.N.S.A.M College, 82.83%",
+            "SSLC - Hindu Junior College, 88.48%"
+        ];
+        let skills = ["Python", "C", "Java", "C++", "Machine Learning", "Neural Networks", "HTML", "CSS", "Django", "Time Management", "Communication"];
+        let projects = [
+            "Blood Group Detection Using Image Processing",
+            "Personal Task Manager Project",
+            "Python-based Hangman Game"
+        ];
+        let contact = {
+            email: "prabhurachana17@gmail.com",
+            phone: "9686519416",
+            location: "Belman, Udupi, Karnataka",
+            linkedIn: "<a href='https://www.linkedin.com/in/rachana-prabhu-417966298' target='_blank'>My Profile</a>"
+        };
+
+        // DOM Manipulation
+        document.getElementById("about-me").textContent = aboutMe;
+        let educationList = document.getElementById("education-list");
+        education.forEach(item => {
+            let li = document.createElement("li");
+            li.textContent = item;
+            educationList.appendChild(li);
+        });
+        let skillsList = document.getElementById("skills-list");
+        skills.forEach(skill => {
+            let li = document.createElement("li");
+            li.textContent = skill;
+            skillsList.appendChild(li);
+        });
+        let projectsList = document.getElementById("projects-list");
+        projects.forEach(project => {
+            let li = document.createElement("li");
+            li.textContent = project;
+            projectsList.appendChild(li);
+        });
+        document.getElementById("contact-info").innerHTML = `Email: ${contact.email} <br> Phone: ${contact.phone} <br> Location: ${contact.location} <br> LinkedIn: ${contact.linkedIn}`;
+    </script>
+</body>
+</html>
