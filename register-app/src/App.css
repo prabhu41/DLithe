@@ -1,0 +1,70 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.container {
+  border: 2px solid #000;
+  padding: 20px;
+  margin: 20px auto;
+  width: 320px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input, select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.transaction-form {
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.deposit {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.withdraw {
+  background-color: #f8d7da;
+  color: #721c24;
+}
